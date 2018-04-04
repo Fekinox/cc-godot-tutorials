@@ -18,6 +18,7 @@ func _ready():
 	# Add tween as child, then connect signal
 	self.add_child(vis_tween)
 	vis_tween.connect("tween_completed", self, "change_visible")
+	
 
 func update_panel(direction, position, length, dotproduct, angle):
 	direction_d.text = "%.2f" % rad2deg(direction)
